@@ -186,7 +186,7 @@
 
     <div class="quote-box">
       <h2 style="margin-top:0">Get a Free Quote Today</h2>
-      <form action="https://formspree.io/f/xblgwjqk" method="POST" onsubmit="showPopup(event)">
+      <form action="https://formspree.io/f/xblgwjqk" method="POST" onsubmit="setTimeout(() => { window.location.href = '/thank-you'; }, 100); return true;">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
         <label for="phone">Phone Number</label>
@@ -197,11 +197,6 @@
         <textarea id="details" name="details" rows="4" placeholder="Number of stumps, size, access, etc." required></textarea>
         <button type="submit">Request Free Quote</button>
       </form>
-    </div>
-
-    <div class="popup" id="thankYouPopup">
-      <h3>Thank You!</h3>
-      <p>We got your form and will be in contact soon.</p>
     </div>
 
     <section class="benefits" style="background: #f0fdf4; padding: 3rem 1rem; color: #1a202c; text-align: center; border-radius: 10px;">
