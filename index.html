@@ -285,9 +285,7 @@
           headers: { 'Accept': 'application/json' }
         });
         if (response.ok) {
-          if (typeof gtag === "function") {
-            gtag('event', 'conversion', {'send_to': 'AW-16999802454/a2MACOaGyLcaENbMkao_'});
-          }
+          
           window.location.href = "/thank-you";
         } else {
           alert("Submission failed. Please try again.");
@@ -298,5 +296,22 @@
       }
     });
   </script>
+
+<script>
+  window.addEventListener('load', function() {
+    if (window.location.href.includes('/thank-you')) {
+      gtag('event', 'conversion', {'send_to': 'AW-16999802454/GqK_CJb5wroaENbMkao_'});
+    }
+  });
+</script>
+<script>
+  (function(){
+    document.addEventListener('click', function(e){
+      if(e.target.closest('a[href^="tel:"]')){
+        gtag('event', 'conversion', {'send_to': 'AW-16999802454/BIffCOyPt7oaENbMkao_'});
+      }
+    });
+  })();
+</script>
 </body>
 </html>
