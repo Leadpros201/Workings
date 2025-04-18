@@ -19,7 +19,26 @@
     }
   </style>
 </head>
-<body>
+ <body>
+   <script>
+  window.addEventListener('load', function() {
+    if (window.location.href.includes('/thank-you')) {
+      gtag('event', 'conversion', {'send_to': 'AW-16999802454/GqK_CJb5wroaENbMkao_'});
+    }
+  });
+
+</script>
+<script>
+  (function(){
+    document.addEventListener('click', function(e){
+      if(e.target.closest('a[href^="tel:"]')){
+  gtag('event', 'conversion', {'send_to': 'AW-16999802454/BIffCOyPt7oaENbMkao_'});
+
+      }
+    });
+  })();
+</script>
+
   <h1>Thanks for reaching out!</h1>
   <p>We'll contact you shortly about your stump removal job.</p>
 </body>
