@@ -1,317 +1,351 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16999802454"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-16999802454');
-</script>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portland Stump Pros | Fast, Affordable Stump Removal in Portland, OR</title>
-<meta content="Need stump removal in Portland, OR? Portland Stump Pros offers fast, same-day stump grinding and cleanup. Local, licensed, and affordable. Get a free quote now!" name="description"/>
-<meta content="Portland stump removal, stump grinding Portland OR, Portland Stump Pros, remove tree stump fast, stump removal quote, licensed stump removal, local stump removal services" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background: #f5f8fa;
-      color: #222;
-      line-height: 1.6;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portland Outdoor Pros | Landscaping • Tree Services • Yard Clean‑Ups</title>
+  <meta name="description" content="Portland Outdoor Pros provides professional landscaping, tree care, emergency tree removal, and yard clean‑ups across the Portland metro area. Fast quotes. Fair pricing. Fully insured." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#1A5729;        /* Primary Button */
+      --green-2:#2ECC71;       /* Secondary Accent */
+      --dk:#2E3A32;            /* Dark Slate Text */
+      --light:#F7FAF8;         /* Light Section */
+      --white:#FFFFFF;
+      --accent:#174d24;        /* Hover shade */
+      --danger:#b02a37;        /* Emergency badge */
     }
-    header {
-      background: linear-gradient(to right, #22543d, #2f855a);
-      color: white;
-      padding: 1.5rem 1rem;
-      text-align: center;
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--dk);background:#fff;}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    .btn{display:inline-block;background:var(--green);color:#fff;padding:.9rem 1.1rem;border-radius:.75rem;font-weight:700;letter-spacing:.2px;transition:.2s;}
+    .btn:hover{background:var(--accent)}
+    .btn.outline{background:transparent;color:var(--green);border:2px solid var(--green)}
+    header{
+      position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eaeaea
     }
-    header h1 {
-      font-size: 2.25rem;
-      margin: 0;
-      font-weight: 700;
+    .nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800}
+    .brand .logo{width:40px;height:40px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%, #1A5729, #2ECC71);display:grid;place-items:center;color:#fff;font-weight:900}
+    .nav-cta{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+    .phone{font-weight:800;white-space:nowrap}
+    .phone a{color:var(--green)}
+
+    .hero{padding:2.2rem 0 1.8rem;background:linear-gradient(180deg,#f5fbf7 0%,#fff 70%)}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:var(--light);padding:.35rem .7rem;border-radius:999px;font-size:.85rem;font-weight:700}
+    .eyebrow .badge{background:var(--danger);color:#fff;padding:.22rem .55rem;border-radius:999px;font-size:.72rem}
+    h1{font-size:clamp(1.9rem,2.6vw,2.6rem);line-height:1.15;margin:.6rem 0}
+    .sub{font-size:1.05rem;opacity:.9;margin-bottom:1.1rem}
+    .hero-ctas{display:flex;gap:.7rem;flex-wrap:wrap;margin:.3rem 0 1.1rem}
+    .kickers{display:flex;gap:1rem;flex-wrap:wrap;font-size:.92rem;color:#33423a}
+    .kickers span{display:flex;align-items:center;gap:.4rem}
+
+    .card{background:#fff;border:1px solid #e5eee8;border-radius:1rem;padding:1rem;box-shadow:0 10px 24px rgba(0,0,0,.04)}
+    .form{display:grid;gap:.7rem}
+    .form input, .form select, .form textarea{padding:.8rem;border:1px solid #cfe0d3;border-radius:.6rem;font:inherit;width:100%}
+    .form small{opacity:.8}
+
+    .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.6rem 0}
+    .tile{border:1px solid #e5eee8;border-radius:1rem;overflow:hidden;background:#fff}
+    .tile img{aspect-ratio:16/10;object-fit:cover}
+    .tile .inner{padding:1rem}
+    .tile h3{margin:.2rem 0 .4rem}
+
+    .why{background:var(--light);padding:1.6rem 0}
+    .why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem}
+    .why-item{background:#fff;border:1px solid #e5eee8;border-radius:.9rem;padding:.9rem;text-align:center;font-weight:600}
+
+    .emergency{border:2px dashed var(--danger);border-radius:1rem;padding:1rem;margin:1.2rem 0;background:#fff5f5}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .quote{border-left:4px solid var(--green);padding:.7rem 1rem;background:#fff}
+
+    .areas{background:var(--light);padding:1.6rem 0}
+    .areas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
+    .areas .pill{background:#fff;border:1px solid #e5eee8;border-radius:999px;padding:.5rem .8rem;display:inline-block}
+
+    footer{padding:2rem 0;background:#0f1a14;color:#dfe7e2}
+    footer a{color:#dfe7e2}
+
+    /* Sticky mobile bar */
+    .stickybar{position:fixed;inset:auto 0 0 0;background:#ffffff;border-top:1px solid #e7efe9;padding:.6rem;display:none;z-index:60}
+    .stickybar .wrap{display:flex;gap:.6rem}
+    .stickybar a{flex:1;text-align:center;padding:.9rem;border-radius:.8rem;font-weight:800}
+    .stickybar .call{background:var(--green);color:#fff}
+    .stickybar .quote{border:2px solid var(--green);color:var(--green)}
+
+    @media (max-width: 900px){
+      .hero-inner{grid-template-columns:1fr}
+      .tiles{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .testimonials{grid-template-columns:1fr}
+      .areas-grid{grid-template-columns:repeat(2,1fr)}
+      .stickybar{display:block}
     }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.75rem;
-    }
-    .cta-bar {
-      background: #2f855a;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    .cta-bar a {
-      display: inline-block;
-      background: white;
-      color: #2f855a;
-      padding: 0.5rem 1rem;
-      margin-top: 0.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    main {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    .certifications {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      background: #e6fffa;
-      padding: 1rem;
-      margin: 2rem 0;
-      border-radius: 10px;
-      text-align: center;
-      font-weight: 600;
-    }
-    .certifications div {
-      background: #ffffff;
-      padding: 0.75rem 1.25rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .quote-box {
-      background: #f0fff4;
-      padding: 1.5rem;
-      border: 2px solid #c6f6d5;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      margin: 1rem 0 0.5rem;
-      font-weight: 600;
-    }
-    input, textarea {
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      margin-top: 1.5rem;
-      padding: 1rem;
-      background: #2f855a;
-      color: white;
-      border: none;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background: #276749;
-    }
-    .faq ul {
-      list-style: none;
-      padding: 0;
-    }
-    .faq li {
-      border: 1px solid #cbd5e0;
-      border-radius: 6px;
-      padding: 1rem;
-      margin-bottom: 0.75rem;
-      background: #f7fafc;
-      cursor: pointer;
-    }
-    .faq-answer {
-      display: none;
-      padding-top: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #edf2f7;
-      color: #666;
-    }
-    .sticky-call {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #2f855a;
-      color: white;
-      text-align: center;
-      padding: 0.75rem;
-      z-index: 999;
-    }
-    .sticky-call a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
+  </style>
   
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      .cta-bar {
-        font-size: 1rem;
-        padding: 0.75rem;
-      }
-      .cta-bar a {
-        font-size: 1rem;
-        padding: 0.4rem 0.75rem;
-      }
-      main {
-        padding: 1rem;
-        margin: 1rem;
-      }
-      .certifications {
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-      .quote-box {
-        padding: 1rem;
-      }
-      form input, form textarea {
-        font-size: 1rem;
-      }
-      button {
-        font-size: 1rem;
-      }
-      .benefits ul {
-        font-size: 1rem;
-      }
-      .faq li {
-        font-size: 0.95rem;
-      }
-    }
-    </style>
+  <!-- LocalBusiness Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Portland Outdoor Pros",
+    "image": "https://example.com/logo.png",
+    "telephone": "+1-623-850-1525",
+    "areaServed": [
+      "Portland","Beaverton","Hillsboro","Gresham","Tigard","Tualatin","Lake Oswego","West Linn","Oregon City","Clackamas","Milwaukie","Happy Valley","Troutdale","Fairview","Wood Village","Damascus","Sherwood","Wilsonville","Aloha","Vancouver","Camas","Washougal","Ridgefield","Battleground"
+    ],
+    "url": "https://www.your-domain.com",
+    "description": "Professional landscaping, tree services, emergency tree removal, and yard clean‑ups across the Portland metro area. Fast quotes. Fair pricing. Fully insured.",
+    "address": {"@type":"PostalAddress","addressLocality":"Portland","addressRegion":"OR","addressCountry":"US"},
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
-<header>
-<h1 style="font-size: 2.25rem;">Portland’s #1 Stump Removal Service</h1>
-<p style="font-size: 1.25rem;">Fast Quotes. Same-Day Availability. Trusted Locals.</p>
-<div style="text-align:center; margin-top: 1rem;">
-<a href="#quote" style="background: #2f855a; color: white; padding: 0.75rem 1.5rem; font-size: 1.1rem; border-radius: 8px; text-decoration: none; font-weight: bold;">
-    Get My Free Quote
-  </a>
-</div>
-</header>
-<main>
-<a id="quote"></a>
-<div class="quote-box">
-<h2 style="margin-top:0">Get a Free Quote Today</h2>
-<form id="contactForm">
-<label for="name">Name</label>
-<input id="name" name="name" required="" type="text"/>
-<label for="phone">Phone Number</label>
-<input id="phone" name="phone" required="" type="tel"/>
-<label for="address">Address</label>
-<input id="address" name="address" required="" type="text"/>
-<label for="details">Job Details</label>
-<textarea id="details" name="details" placeholder="Number of stumps, size, access, etc." required="" rows="4"></textarea>
-<input name="_replyto" type="hidden" value=""/>
-<button type="submit">Get My Free Quote</button>
-</form>
-</div>
-<a id="why-us"></a>
-<section class="benefits" style="background: #f0fdf4; padding: 1.5rem 1rem; color: #1a202c; text-align: center; border-radius: 10px;">
-<h2 style="font-size: 2.25rem; margin-bottom: 1rem; color: #22543d;">Why Choose Us?</h2>
-<ul style="list-style: none; padding: 0; max-width: 600px; margin: auto; font-size: 1.1rem;"><li style="margin: 0.75rem 0; font-weight: 600;">⭐ 5-Star Customer Reviews</li>
-<li style="margin: 0.75rem 0; font-weight: 600;">🕒 Same-Day &amp; Next-Day Appointments</li>
-<li style="margin: 0.75rem 0; font-weight: 600;">💵 Affordable Rates – No Hidden Fees</li>
-<li style="margin: 0.75rem 0; font-weight: 600;">✅ Licensed &amp; Insured</li>
-<li style="margin: 0.75rem 0; font-weight: 600;">📍 Local Portland Team</li>
-<li style="margin: 0.75rem 0; font-weight: 600;">🌿 Eco-Friendly Cleanup Options</li>
-<li style="margin: 0.75rem 0; font-weight: 600;">🔒 Secure Quote Form</li></ul>
-</section>
-<a id="faq"></a>
-<section class="faq">
-<h2>FAQ</h2>
-<ul>
-<li onclick="toggleAnswer(this)">
-<strong>How much does it cost?</strong>
-<div class="faq-answer">Usually $6–$10 per inch depending on access &amp; stump size.</div>
-</li>
-<li onclick="toggleAnswer(this)">
-<strong>Can you remove multiple stumps?</strong>
-<div class="faq-answer">Yes – we specialize in batch grinding jobs for homeowners &amp; landscapers.</div>
-</li>
-<li onclick="toggleAnswer(this)">
-<strong>Is same-day service available?</strong>
-<div class="faq-answer">Yes – depending on job size &amp; scheduling.</div>
-</li>
-</ul>
-</section>
-</main>
-<footer>
-    © 2024 Portland Stump Pros | Serving Portland, Beaverton, Tigard, Gresham, and surrounding areas
-    <p style="font-size: 0.7rem; color: #999; text-align: center; max-width: 800px; margin: 1rem auto 0; line-height: 1.4;">
-      By submitting this form, you consent to having your information shared with local stump removal professionals in order to provide quotes and coordinate service. Information may be shared with trusted third-party contractors strictly for the purpose of fulfilling service requests.
-    </p>
-</footer>
-<div class="sticky-call">
-<a href="tel:+16238501525">📞 Tap to Call or Get a Fast Quote</a>
-</div>
-<script>
-    function toggleAnswer(el) {
-      const answer = el.querySelector('.faq-answer');
-      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-    }
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🌳</div>
+        <div>
+          <div style="font-size:1.05rem;line-height:1;font-weight:900">Portland Outdoor Pros</div>
+          <div style="font-size:.82rem;opacity:.7">Landscaping • Tree • Yard</div>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <div class="phone">📞 <a href="tel:16238501525">623‑850‑1525</a></div>
+        <a class="btn" href="#quote">Get a Free Quote</a>
+      </div>
+    </div>
+  </header>
 
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      try {
-        const response = await fetch("https://formspree.io/f/xblgwjqk", {
-          method: "POST",
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          
-          window.location.href = "/thank-you";
-        } else {
-          alert("Submission failed. Please try again.");
-        }
-      } catch (err) {
-        alert("Something went wrong. Please try again later.");
-        console.error(err);
-      }
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div>
+        <div class="eyebrow"><span class="badge">EMERGENCY</span> Tree Removal Available</div>
+        <h1>Portland’s Trusted Outdoor Service Experts</h1>
+        <p class="sub"><strong>Fast Quotes. Fair Pricing. Insured Professionals.</strong> Call now or request a free estimate in seconds.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="tel:16238501525">📞 Call: 623‑850‑1525</a>
+          <a class="btn outline" href="#quote">✅ Get a Free Quote</a>
+        </div>
+        <div class="kickers">
+          <span>✔ Safe, professional tree work</span>
+          <span>✔ Clean‑ups always included</span>
+          <span>✔ Same‑day responses</span>
+        </div>
+      </div>
+      <div class="card">
+        <form class="form" id="leadForm" action="#" method="post">
+          <h3 style="margin:0 0 .4rem">Request a Free Quote</h3>
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+          <select name="service" required>
+            <option value="" disabled selected>Service Needed</option>
+            <option>Landscaping</option>
+            <option>Tree Removal / Trimming</option>
+            <option>Stump Grinding</option>
+            <option>Yard Clean‑Up / Hauling</option>
+            <option>Emergency Tree Removal</option>
+          </select>
+          <input type="text" name="zip" placeholder="ZIP Code" required>
+          <textarea name="details" rows="3" placeholder="Tell us a bit about the job (optional)"></textarea>
+          <input type="hidden" name="source" value="Website Hero Form" />
+          <button class="btn" type="submit">Get My Free Quote</button>
+          <small>No obligation. We respond within minutes.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="tiles">
+      <article class="tile">
+        <img src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?q=80&w=1600&auto=format&fit=crop" alt="Landscaping lawn and plants">
+        <div class="inner">
+          <h3>Landscaping</h3>
+          <p>Sod installation, mulch & rock, planting, weed control, and more.</p>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+            <a class="btn" href="#quote" data-service="Landscaping">Free Quote</a>
+            <a class="btn outline" href="#landscaping">Learn More</a>
+          </div>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="https://images.unsplash.com/photo-1533681018184-68bd1d883546?q=80&w=1600&auto=format&fit=crop" alt="Tree service crew at work">
+        <div class="inner">
+          <h3>Tree Services</h3>
+          <p>Safe removals, expert trimming & pruning, complete stump grinding.</p>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+            <a class="btn" href="#quote" data-service="Tree Removal / Trimming">Free Quote</a>
+            <a class="btn outline" href="#tree">Learn More</a>
+          </div>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="https://images.unsplash.com/photo-1629410620548-582fa650455f?q=80&w=1600&auto=format&fit=crop" alt="Yard clean up and debris hauling">
+        <div class="inner">
+          <h3>Yard Clean‑Ups</h3>
+          <p>Overgrowth, debris & green waste hauling. Fast and affordable.</p>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+            <a class="btn" href="#quote" data-service="Yard Clean‑Up / Hauling">Free Quote</a>
+            <a class="btn outline" href="#cleanup">Learn More</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <h2 style="margin:.2rem 0 1rem">Why Choose Portland Outdoor Pros</h2>
+      <div class="why-grid">
+        <div class="why-item">Licensed & Insured</div>
+        <div class="why-item">Fast Scheduling</div>
+        <div class="why-item">Fair, Upfront Pricing</div>
+        <div class="why-item">Safe Tree Work</div>
+        <div class="why-item">We Clean Everything</div>
+      </div>
+      <div class="emergency">
+        <strong>🚨 Emergency Tree Removal:</strong> Storm damage or a dangerous tree? Call <a href="tel:16238501525">623‑850‑1525</a> for immediate priority response.
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="gallery">
+    <h2 style="margin:1rem 0 .6rem">Before & After</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1518731753655-761f2565bfb2?q=80&w=1200&auto=format&fit=crop" alt="Lawn before/after 1" />
+      <img src="https://images.unsplash.com/photo-1554009975-d74653b87995?q=80&w=1200&auto=format&fit=crop" alt="Tree trimming" />
+      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1200&auto=format&fit=crop" alt="Clean up" />
+    </div>
+  </section>
+
+  <section class="container" id="reviews" style="margin:1.2rem 0">
+    <h2 style="margin:.4rem 0 .8rem">Customer Reviews</h2>
+    <div class="testimonials">
+      <div class="quote">⭐⭐⭐⭐⭐ “Professional, fast, and affordable. Yard looks amazing!”<br><small>— Steve K., Portland</small></div>
+      <div class="quote">⭐⭐⭐⭐⭐ “They safely removed a huge fir near our roof. Great crew.”<br><small>— Jessica L., Gresham</small></div>
+    </div>
+  </section>
+
+  <section class="areas" id="areas">
+    <div class="container">
+      <h2 style="margin:.2rem 0 1rem">Service Area — Portland Metro & Surrounding Communities</h2>
+      <div class="areas-grid" aria-label="Cities we serve">
+        <span class="pill">Portland</span>
+        <span class="pill">Beaverton</span>
+        <span class="pill">Hillsboro</span>
+        <span class="pill">Gresham</span>
+        <span class="pill">Tigard</span>
+        <span class="pill">Tualatin</span>
+        <span class="pill">Lake Oswego</span>
+        <span class="pill">West Linn</span>
+        <span class="pill">Oregon City</span>
+        <span class="pill">Clackamas</span>
+        <span class="pill">Milwaukie</span>
+        <span class="pill">Happy Valley</span>
+        <span class="pill">Troutdale</span>
+        <span class="pill">Fairview</span>
+        <span class="pill">Wood Village</span>
+        <span class="pill">Damascus</span>
+        <span class="pill">Sherwood</span>
+        <span class="pill">Wilsonville</span>
+        <span class="pill">Aloha</span>
+        <span class="pill">Vancouver, WA</span>
+        <span class="pill">Camas, WA</span>
+        <span class="pill">Washougal, WA</span>
+        <span class="pill">Ridgefield, WA</span>
+        <span class="pill">Battleground, WA</span>
+      </div>
+      <p style="margin-top:1rem">Not sure if you’re in range? <a href="tel:16238501525">Call us — we probably cover it.</a></p>
+    </div>
+  </section>
+
+  <section class="container" id="quote" style="margin:1.6rem auto 2rem">
+    <div class="card">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center">
+        <div>
+          <h2 style="margin:.2rem 0 .4rem">Get Your Free Quote</h2>
+          <p>Tell us what you need. We’ll respond within minutes with next steps and fair pricing.</p>
+          <p style="font-weight:700">Prefer to talk? <a href="tel:16238501525">Call 623‑850‑1525</a></p>
+        </div>
+        <form class="form" id="leadForm2" action="#" method="post">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+          <select name="service" required>
+            <option value="" disabled selected>Service Needed</option>
+            <option>Landscaping</option>
+            <option>Tree Removal / Trimming</option>
+            <option>Stump Grinding</option>
+            <option>Yard Clean‑Up / Hauling</option>
+            <option>Emergency Tree Removal</option>
+          </select>
+          <input type="text" name="zip" placeholder="ZIP Code" required>
+          <textarea name="details" rows="3" placeholder="Tell us a bit about the job (optional)"></textarea>
+          <input type="hidden" name="source" value="Website Bottom Form" />
+          <button class="btn" type="submit">Request My Quote</button>
+          <small>No obligation. We respond within minutes.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center">
+      <div>
+        <div style="font-weight:900">Portland Outdoor Pros</div>
+        <div style="opacity:.8">Landscaping • Tree Services • Yard Clean‑Ups</div>
+        <div style="margin-top:.3rem">📞 <a href="tel:16238501525">623‑850‑1525</a></div>
+      </div>
+      <div style="opacity:.85">© <span id="yr"></span> Portland Outdoor Pros. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="stickybar" role="navigation" aria-label="Quick actions">
+    <div class="container wrap">
+      <a class="call" href="tel:16238501525">📞 Call Now</a>
+      <a class="quote" href="#quote">✅ Free Quote</a>
+    </div>
+  </div>
+
+  <script>
+    // Year in footer
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Autofill service when clicking Free Quote on tiles
+    document.querySelectorAll('a[data-service]').forEach(el=>{
+      el.addEventListener('click', e=>{
+        const svc = el.getAttribute('data-service');
+        setTimeout(()=>{
+          const sel = document.querySelector('#leadForm2 select[name="service"]') || document.querySelector('#leadForm select[name="service"]');
+          if(sel){ sel.value = Array.from(sel.options).find(o=>o.text===svc)?.value || ""; }
+        }, 50);
+      });
     });
+
+    // Lightweight client-side validation + demo submit handler
+    function handleLeadFormSubmit(evt){
+      evt.preventDefault();
+      const form = evt.target;
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      // TODO: Replace with your real endpoint (e.g., Formspree, Zapier, GHL, custom)
+      // Example: fetch('https://your-endpoint.example/lead', {method:'POST', body:new FormData(form)});
+
+      alert('Thanks! We\'ll contact you shortly.');
+      form.reset();
+    }
+    document.getElementById('leadForm').addEventListener('submit', handleLeadFormSubmit);
+    document.getElementById('leadForm2').addEventListener('submit', handleLeadFormSubmit);
   </script>
-
-<script>
-  window.addEventListener('load', function() {
-    if (window.location.href.includes('/thank-you')) {
-      gtag('event', 'conversion', {'send_to': 'AW-16999802454/GqK_CJb5wroaENbMkao_'});
-    }
-  });
-</script>
-<script>
-  (function(){
-    document.addEventListener('click', function(e){
-      if(e.target.closest('a[href^="tel:"]')){
-        gtag('event', 'conversion', {'send_to': 'AW-16999802454/BIffCOyPt7oaENbMkao_'});
-      }
-    });
-  })();
-</script>
 </body>
 </html>
